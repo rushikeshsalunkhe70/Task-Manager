@@ -70,4 +70,146 @@ TaskManager/
 │   └── package.json
 │
 └── README.md
+```
 
+🚀 **Installation & Setup**
+
+**Prerequisites**
+
+  - Node.js
+  - npm
+  - MySQL
+  - XAMPP
+  - VS Code or another IDE
+
+🗄️ **Database Setup**
+
+- Apache
+- MySQL
+
+## 🖥️ Application Workflow
+```text
+User
+  ↓
+React Frontend
+  ↓
+HTTP Request
+  ↓
+Node.js + Express API
+  ↓
+MySQL Database
+  ↓
+API Response
+  ↓
+React Frontend
+  ↓
+User
+```
+
+## 🧩 React Component Structure
+```text
+App
+│
+├── AddTaskForm
+│
+├── Filter Buttons
+│
+└── TaskList
+      │
+      ├── TaskItem
+      ├── TaskItem
+      └── TaskItem
+```
+## App.jsx
+
+- Task state
+- Filter state
+- API requests
+- Add task
+- Edit task
+- Delete task
+- Complete/Pending status
+- Filtering
+
+## AddTaskForm.jsx
+
+- Task title
+- Task description
+- Due date
+- Form validation
+- Creating tasks
+
+## TaskList.jsx
+ - Responsible for displaying the list of tasks.
+
+## TaskItem.jsx
+- Complete/Pending
+- Edit
+- Delete
+- Due date
+- Overdue status
+
+ ## 🔄 CRUD Operations
+ ```text
+  Operation    Method  Endpoint              
+
+ Create         POST    `/api/tasks`          
+ Read           GET     `/api/tasks`          
+ Update Status  PUT     `/api/tasks/:id`      
+ Edit Task      PUT     `/api/tasks/edit/:id` 
+ Delete         DELETE  `/api/tasks/:id`      
+```
+
+## 🔍 Task Filters
+
+The application provides three filters:
+
+## All
+
+- Displays all tasks.
+
+## Completed
+
+- Displays only completed tasks.
+
+## Pending
+
+- Displays only pending tasks.
+ ```text
+  All
+   ↓
+Completed + Pending
+
+Completed
+   ↓
+Completed tasks only
+
+Pending
+   ↓
+Pending tasks only
+```
+
+## 📅 Due Date & Overdue Logic
+
+Each task can have a due date.
+
+A task is considered overdue when:
+```text
+Due Date < Current Date
+AND
+Task is Pending
+```
+Overdue tasks are displayed in red.
+
+---
+## 👨‍💻 Author
+
+Rushikesh Gajanan Salunkhe
+
+MSc Computer Science
+
+
+---
+## 📄 License
+
+This project is created for educational and portfolio purposes.
