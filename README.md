@@ -30,9 +30,6 @@ The application allows users to create, view, update, complete, filter, and dele
 ### Frontend
 - React.js
 - JavaScript
-- HTML
-- CSS
-- Vite
 
 ### Backend
 - Node.js
